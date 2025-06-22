@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Wheat Flour", "price": 45, "unit": "1kg" },
+  { "id": 2, "name": "Basmati Rice", "price": 120, "unit": "1kg" },
+  { "id": 3, "name": "Toor Dal", "price": 90, "unit": "1kg" },
+  { "id": 4, "name": "Sugar", "price": 40, "unit": "1kg" },
+  { "id": 5, "name": "Cooking Oil", "price": 130, "unit": "1L" }
+]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shiva General Store</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js')
+        .then(reg => console.log('Service Worker Registered'))
+        .catch(err => console.log('SW registration failed:', err));
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Shiva General Store</h1>
+    <input type="text" placeholder="Search products..." id="searchBox" oninput="filterProducts()">
+  </header>
+
+  <main id="productList">
+    <!-- Products will be dynamically loaded here -->
+  </main>
+
+  <footer>
+    <button onclick="checkout()">Checkout</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
